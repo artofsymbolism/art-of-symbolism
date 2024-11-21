@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000; // Changed from 6000 to 5000
 
 app.use(cors({
-  origin: ['https://www.artofsymbolism.com', 'https://artofsymbolism.com'], //  Include both www and non-www versions
+  origin: 'https://artofsymbolism.github.io', //  Include both www and non-www versions
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }));
