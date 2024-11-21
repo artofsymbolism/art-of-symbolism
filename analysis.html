@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Analysis - The Art of Symbolism</title>
+  <!-- Load CSS Libraries via CDN -->
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- AOS Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Your Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="analysis.html">Image Analysis</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="analysis" data-aos="fade-up">
+      <h1>Image Analysis</h1>
+      <div class="upload-container">
+        <label for="imageFile" class="custom-file-upload">
+          <i class="fas fa-cloud-upload-alt"></i> Choose Image
+        </label>
+        <input type="file" id="imageFile" accept="image/*">
+        
+        <!-- Add CAPTCHA Section Here -->
+        <div class="captcha-container" id="captchaContainer">
+          <p id="captchaQuestion"></p>
+          <input type="text" id="captchaAnswer" placeholder="Your answer">
+          <button id="verifyCaptchaBtn">Verify</button>
+          <p id="captchaError" style="color: red; display: none;">Incorrect answer. Try again.</p>
+        </div>
+        
+        <button id="analyzeBtn" disabled>Analyze Image</button>
+      </div>
+      <div class="image-preview" id="imagePreview">
+        <!-- Image preview will appear here -->
+      </div>
+      <div class="loader" id="loader" style="display: none;"></div>
+      <div class="results" id="results">
+        <!-- Analysis results will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; The Art of Symbolism 2024</p>
+  </footer>
+
+  <!-- Load JavaScript Libraries via CDN -->
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" crossorigin="anonymous"></script>
+  <!-- AOS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Your Custom Scripts -->
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

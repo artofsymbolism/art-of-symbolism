@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Project Name</title>
+  <!-- Load CSS Libraries via CDN -->
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvkizN8QN3XxsI0F7mWUEo2++j3tbZ8aG1m0=" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- AOS Library (for animations) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Your Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="analysis.html">Image Analysis</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+      <!-- Video Background -->
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1>Unlock Hidden Connections</h1>
+        <p>Discover what lies beneath the surface.</p>
+        <a href="analysis.html" class="btn">Test AI</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <p>&copy; The Art of Symbolism 2024</p>
+  </footer>
+
+  <!-- Load JavaScript Libraries via CDN -->
+  <!-- AOS Library -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+  <!-- Your Custom Scripts -->
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
