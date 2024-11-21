@@ -8,7 +8,11 @@ const { ClarifaiStub, grpc } = require('clarifai-nodejs-grpc');
 const app = express();
 const port = process.env.PORT || 5000; // Changed from 6000 to 5000
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://artofsymbolism.github.io', // Your GitHub Pages domain
+  methods: ['GET', 'POST'],
+  allowedHeaders: ['Content-Type'],
+}));
 app.use(express.json({ limit: '10mb' }));
 
 // Initialize Clarifai stub with your PAT
