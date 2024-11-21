@@ -52,7 +52,7 @@ function displayResults(data) {
 
 // Function to send image data to the backend for analysis
 function analyzeImage(base64Image) {
-  const backendUrl = 'http://127.0.0.1:5000/analyze-image'; // Update if necessary
+  const backendUrl = 'https://art-of-symbolism.onrender.com/analyze-image'; // Update if necessary
 
   const analyzeBtn = document.getElementById('analyzeBtn');
   const loader = document.getElementById('loader');
