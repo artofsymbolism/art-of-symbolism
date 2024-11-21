@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000; // Changed from 6000 to 5000
 
 app.use(cors({
-  origin: 'https://artofsymbolism.github.io', // Your GitHub Pages domain
+  origin: 'https://artofsymbolism.github.io',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 }));
