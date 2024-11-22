@@ -11,12 +11,17 @@ const port = process.env.PORT || 5000; // Changed from 6000 to 5000
 app.use(cors({
   origin: [
     'https://www.artofsymbolism.com', 
-    'https://artofsymbolism.com'
-  ], // Allow GitHub Pages and both custom domain versions
+    'https://artofsymbolism.com',
+    'http://www.artofsymbolism.com', 
+    'http://artofsymbolism.com'
+  ], // Include both HTTP and HTTPS, with/without www
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
+  credentials: true, // Allow cookies or credentials if needed
 }));
-app.use(express.json({ limit: '10mb' }));
+
+app.use(express.json({ limit: '50mb' })); // Increase limit as necessary
+
 
 // Initialize Clarifai stub with your PAT
 const stub = ClarifaiStub.grpc();
