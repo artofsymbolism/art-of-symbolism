@@ -73,7 +73,7 @@ function analyzeImage(base64Image) {
       loader.style.display = 'none'; // Hide loader
       analyzeBtn.disabled = false; // Re-enable button
       analyzeBtn.classList.add('enabled');
-      alert('An error occurred while analyzing the image.');
+      alert('There are too many requests right now. Please try again later.');
     });
 }
 
