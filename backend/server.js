@@ -3,7 +3,7 @@
 require('dotenv').config(); // Load environment variables from .env
 const express = require('express');
 const cors = require('cors');
-const { ClarifaiStub, grpc } = require('clarifai-nodejs-grpc');
+const { ClarifaiStub, grpc } = require('clarifai-nodejs-grpc'); 
 
 const app = express();
 const port = process.env.PORT || 5000; // Changed from 6000 to 5000
